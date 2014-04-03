@@ -45,6 +45,26 @@ nets = dict(
         ANNOUNCE_CHANNEL='#p2pool-alt',
         VERSION_CHECK=lambda v: 50700 <= v < 60000 or 60010 <= v < 60100 or 60400 <= v,
     ),
+    myriadcoin=math.Object(
+        PARENT=networks.nets['myriadcoin'],
+        SHARE_PERIOD=25, # seconds
+        NEW_SHARE_PERIOD=25, # seconds
+        CHAIN_LENGTH=24*60*60//10, # shares
+        REAL_CHAIN_LENGTH=24*60*60//10, # shares
+        TARGET_LOOKBEHIND=50, # shares  //with that the pools share diff is adjusting faster, important if huge hashing power comes to the pool
+        SPREAD=30, # blocks
+        NEW_SPREAD=30, # blocks
+        IDENTIFIER='fc70135c700a00ee'.decode('hex'),
+        PREFIX='9472ef181e88efcb'.decode('hex'),
+        P2P_PORT=5566,
+        MIN_TARGET=0,
+        MAX_TARGET=2**256//2**20 - 1,
+        PERSIST=True,
+        WORKER_PORT=5567,
+        BOOTSTRAP_ADDRS='p2poolcoin.com'.split(' '),
+        #ANNOUNCE_CHANNEL='#p2pool',
+        VERSION_CHECK=lambda v: True,
+    ),    
     litecoin=math.Object(
         PARENT=networks.nets['litecoin'],
         SHARE_PERIOD=15, # seconds
