@@ -99,6 +99,16 @@ Notes for DigiByte:
 Digibyte implements a custom subsidy function, that you need to build in order to successfully
 run your P2Pool node. See digibyte_subsidy/README.txt for installation details.
 
+Notes for Myriadcoin:
+-------------------------
+
+Install Qubit hash:
+
+    cd qubitcoin-hash 
+    sudo python setup.py install
+    
+run p2pool with --net myriadcoin
+
 Sponsors:
 -------------------------
 
