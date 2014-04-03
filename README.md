@@ -83,31 +83,25 @@ http://stackoverflow.com/questions/6034390/compiling-with-cython-and-mingw-produ
 
 Running P2Pool:
 -------------------------
-Run P2Pool with the "--net litecoin" option.
-Run your miner program, connecting to 127.0.0.1 on port 9327.
-Forward port 9338 to the host running P2Pool.
+Run P2Pool with the "--net myriadcoin" option.
+Run your miner program, connecting to 127.0.0.1 on port 5567.
+Forward port 5567 to the host running P2Pool.
 
-Litecoin's use of ports 9332 and 9332 conflicts with P2Pool running on
-the Bitcoin network. To avoid problems, add these lines to litecoin.conf
-and restart litecoind:
-
-    rpcport=10332
-    port=10333
-
-Notes for DigiByte:
--------------------------
-Digibyte implements a custom subsidy function, that you need to build in order to successfully
-run your P2Pool node. See digibyte_subsidy/README.txt for installation details.
 
 Notes for Myriadcoin:
 -------------------------
 
 Install Qubit hash:
 
-    cd qubitcoin-hash 
-    sudo python setup.py install
+    MUHNPJvXCjCnQPeDFX2FnzWNN8C5tw9wak
     
 run p2pool with --net myriadcoin
+
+Donations:
+-------------------------
+
+Donations are welcome to have make it running with myriadcoin qubit:
+MUHNPJvXCjCnQPeDFX2FnzWNN8C5tw9wak
 
 Sponsors:
 -------------------------
