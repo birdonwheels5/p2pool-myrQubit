@@ -93,15 +93,15 @@ Notes for Myriadcoin:
 
 Install Qubit hash:
 
-    MUHNPJvXCjCnQPeDFX2FnzWNN8C5tw9wak
-    
-run p2pool with --net myriadcoin
+    cd qubitcoin-hash
+    sudo python setup.py install
 
 Donations:
 -------------------------
 
 Donations are welcome to have make it running with myriadcoin qubit:
-MUHNPJvXCjCnQPeDFX2FnzWNN8C5tw9wak
+
+     MUHNPJvXCjCnQPeDFX2FnzWNN8C5tw9wak
 
 Sponsors:
 -------------------------
