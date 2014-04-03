@@ -95,6 +95,10 @@ Install Qubit hash:
 
     cd qubitcoin-hash
     sudo python setup.py install
+    
+When you install myriadcoind, don't forget to write in your myriadcoin.conf:
+
+    algo=qubit
 
 Donations:
 -------------------------
