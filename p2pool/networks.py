@@ -47,8 +47,8 @@ nets = dict(
     ),
     myriadcoin=math.Object(
         PARENT=networks.nets['myriadcoin'],
-        SHARE_PERIOD=25, # seconds
-        NEW_SHARE_PERIOD=25, # seconds
+        SHARE_PERIOD=10, # seconds
+        NEW_SHARE_PERIOD=10, # seconds
         CHAIN_LENGTH=24*60*60//10, # shares
         REAL_CHAIN_LENGTH=24*60*60//10, # shares
         TARGET_LOOKBEHIND=50, # shares  //with that the pools share diff is adjusting faster, important if huge hashing power comes to the pool
