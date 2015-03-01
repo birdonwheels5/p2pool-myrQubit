@@ -61,7 +61,7 @@ nets = dict(
         MAX_TARGET=2**256//2**20 - 1,
         PERSIST=True,
         WORKER_PORT=5567,
-        BOOTSTRAP_ADDRS='p2poolcoin.com nz.p2pool.geek.nz birdspool.no-ip.org'.split(' '),
+        BOOTSTRAP_ADDRS='p2poolcoin.com nz.p2pool.geek.nz uk.p2pool.geek.nz birdspool.no-ip.org meziti.nl'.split(' '),
         #ANNOUNCE_CHANNEL='#p2pool',
         VERSION_CHECK=lambda v: True,
     ),    
